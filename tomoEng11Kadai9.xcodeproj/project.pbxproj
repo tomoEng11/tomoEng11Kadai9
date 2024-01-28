@@ -13,6 +13,8 @@
 		BB62CD702B661FE2007A534B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB62CD6E2B661FE2007A534B /* Main.storyboard */; };
 		BB62CD722B661FE4007A534B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB62CD712B661FE4007A534B /* Assets.xcassets */; };
 		BB62CD752B661FE4007A534B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB62CD732B661FE4007A534B /* LaunchScreen.storyboard */; };
+		BB62CD7D2B66233D007A534B /* SelectPrefecture.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB62CD7C2B66233D007A534B /* SelectPrefecture.storyboard */; };
+		BB62CD7F2B66236D007A534B /* SelectPrefecutureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB62CD7E2B66236D007A534B /* SelectPrefecutureViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		BB62CD712B661FE4007A534B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB62CD742B661FE4007A534B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB62CD762B661FE4007A534B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB62CD7C2B66233D007A534B /* SelectPrefecture.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SelectPrefecture.storyboard; sourceTree = "<group>"; };
+		BB62CD7E2B66236D007A534B /* SelectPrefecutureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPrefecutureViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				BB62CD6A2B661FE2007A534B /* SceneDelegate.swift */,
 				BB62CD6C2B661FE2007A534B /* ViewController.swift */,
 				BB62CD6E2B661FE2007A534B /* Main.storyboard */,
+				BB62CD7E2B66236D007A534B /* SelectPrefecutureViewController.swift */,
+				BB62CD7C2B66233D007A534B /* SelectPrefecture.storyboard */,
 				BB62CD712B661FE4007A534B /* Assets.xcassets */,
 				BB62CD732B661FE4007A534B /* LaunchScreen.storyboard */,
 				BB62CD762B661FE4007A534B /* Info.plist */,
@@ -127,6 +133,7 @@
 			files = (
 				BB62CD752B661FE4007A534B /* LaunchScreen.storyboard in Resources */,
 				BB62CD722B661FE4007A534B /* Assets.xcassets in Resources */,
+				BB62CD7D2B66233D007A534B /* SelectPrefecture.storyboard in Resources */,
 				BB62CD702B661FE2007A534B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB62CD6D2B661FE2007A534B /* ViewController.swift in Sources */,
+				BB62CD7F2B66236D007A534B /* SelectPrefecutureViewController.swift in Sources */,
 				BB62CD692B661FE2007A534B /* AppDelegate.swift in Sources */,
 				BB62CD6B2B661FE2007A534B /* SceneDelegate.swift in Sources */,
 			);

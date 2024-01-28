@@ -8,12 +8,17 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak private var prefectureLabel: UILabel!
+    private let delegate = UIApplication.shared.delegate as! AppDelegate
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    @IBAction private func buttonPressed(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "SelectPrefecture", bundle: nil)
+        let selectPrefectureVC = storyboard.instantiateViewController(withIdentifier: "selectPrefecture")
+        selectPrefectureVC.modalPresentationStyle = .fullScreen
+        self.present(selectPrefectureVC,animated: true)
     }
 
-
+    override func viewWillAppear(_ animated: Bool) {
+        prefectureLabel.text = delegate.selectedPrefecture
+    }
 }
-
