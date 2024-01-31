@@ -7,13 +7,21 @@
 
 import UIKit
 
+protocol DataShare {
+    func setValue(value: String)
+}
+
 class SelectPrefecutureViewController: UIViewController {
-    private let delegate = UIApplication.shared.delegate as! AppDelegate
-    
-    @IBAction private func buttonPressed(_ sender: UIButton) {
+    var delegate: DataShare?
+
+    @IBAction func prefectureSelectButtonPressed(_ sender: UIButton) {
         if let title =  sender.titleLabel?.text {
-            delegate.selectedPrefecture = title
+            self.delegate?.setValue(value:title)
         }
+        self.dismiss(animated: true, completion: nil)
+    }
+
+    @IBAction private func cancelButtonPressed(_ sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
     }
 }

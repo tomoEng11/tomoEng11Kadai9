@@ -9,16 +9,20 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak private var prefectureLabel: UILabel!
-    private let delegate = UIApplication.shared.delegate as! AppDelegate
+    private var selectedPrefecture: String = "未選択"
 
     @IBAction private func buttonPressed(_ sender: UIButton) {
         let storyboard = UIStoryboard(name: "SelectPrefecture", bundle: nil)
-        let selectPrefectureVC = storyboard.instantiateViewController(withIdentifier: "selectPrefecture")
+        let selectPrefectureVC = storyboard.instantiateViewController(withIdentifier: "selectPrefecture") as! SelectPrefecutureViewController
+        selectPrefectureVC.delegate = self
         selectPrefectureVC.modalPresentationStyle = .fullScreen
-        self.present(selectPrefectureVC,animated: true)
+        present(selectPrefectureVC, animated: true)
     }
+}
 
-    override func viewWillAppear(_ animated: Bool) {
-        prefectureLabel.text = delegate.selectedPrefecture
+extension ViewController: DataShare {
+    func setValue(value: String) {
+        selectedPrefecture = value
+        prefectureLabel.text = selectedPrefecture
     }
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
@@ -22,7 +22,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="東京都"/>
                                 <connections>
-                                    <action selector="buttonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="nKp-QD-zZy"/>
+                                    <action selector="prefectureSelectButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="j3a-Tp-j4h"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="reW-11-SEo">
@@ -31,7 +31,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="神奈川県"/>
                                 <connections>
-                                    <action selector="buttonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="J8H-W9-tjH"/>
+                                    <action selector="prefectureSelectButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="q48-0z-1rz"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BHT-QQ-nRo">
@@ -40,7 +40,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="埼玉県"/>
                                 <connections>
-                                    <action selector="buttonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="5XQ-hS-1SL"/>
+                                    <action selector="prefectureSelectButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="qiv-7c-kZZ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9BP-GC-BAN">
@@ -49,7 +49,16 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="千葉県"/>
                                 <connections>
-                                    <action selector="buttonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="X7f-Fd-58d"/>
+                                    <action selector="prefectureSelectButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="ofC-yB-TIg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fe6-XI-k1q">
+                                <rect key="frame" x="14" y="41" width="104" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="キャンセル"/>
+                                <connections>
+                                    <action selector="cancelButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="4Nm-t5-XRE"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -59,7 +68,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7" y="4"/>
+            <point key="canvasLocation" x="1860.3053435114502" y="3.5211267605633805"/>
         </scene>
     </scenes>
     <resources>
