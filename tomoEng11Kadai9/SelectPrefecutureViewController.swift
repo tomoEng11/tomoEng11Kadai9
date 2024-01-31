@@ -7,12 +7,12 @@
 
 import UIKit
 
-protocol DataShare {
+protocol SelectPrefectureDelegate {
     func setValue(value: String)
 }
 
 class SelectPrefecutureViewController: UIViewController {
-    var delegate: DataShare?
+    var delegate: SelectPrefectureDelegate?
 
     @IBAction func prefectureSelectButtonPressed(_ sender: UIButton) {
         if let title =  sender.titleLabel?.text {

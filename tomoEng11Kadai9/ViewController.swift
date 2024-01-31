@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController: DataShare {
+extension ViewController: SelectPrefectureDelegate {
     func setValue(value: String) {
         selectedPrefecture = value
         prefectureLabel.text = selectedPrefecture
