@@ -20,9 +20,9 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController: SelectPrefectureDelegate {
-    func setValue(value: String) {
-        selectedPrefecture = value
+extension ViewController: SelectPrefectureViewControllerDelegate {
+    func didSelectPrefecture(name: String) {
+        selectedPrefecture = name
         prefectureLabel.text = selectedPrefecture
     }
 }

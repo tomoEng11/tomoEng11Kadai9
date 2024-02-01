@@ -7,21 +7,21 @@
 
 import UIKit
 
-protocol SelectPrefectureDelegate {
-    func setValue(value: String)
+protocol SelectPrefectureViewControllerDelegate: AnyObject {
+    func didSelectPrefecture(name: String)
 }
 
 class SelectPrefecutureViewController: UIViewController {
-    var delegate: SelectPrefectureDelegate?
+    weak var delegate: SelectPrefectureViewControllerDelegate?
 
     @IBAction func prefectureSelectButtonPressed(_ sender: UIButton) {
-        if let title =  sender.titleLabel?.text {
-            self.delegate?.setValue(value:title)
+        if let title = sender.titleLabel?.text {
+            delegate?.didSelectPrefecture(name: title)
         }
-        self.dismiss(animated: true, completion: nil)
+        dismiss(animated: true, completion: nil)
     }
 
     @IBAction private func cancelButtonPressed(_ sender: UIButton) {
-        self.dismiss(animated: true, completion: nil)
+        dismiss(animated: true, completion: nil)
     }
 }
